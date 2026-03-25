@@ -3,12 +3,12 @@ $('.one-post').hover(
     function(event) {
         $(event.currentTarget)
             .find('.one-post-shadow-box')
-            .animate({ opacity: '1' }, 300);
+            .animate({ opacity: '0.5' }, 300);
     },
     function(event) {
         $(event.currentTarget)
             .find('.one-post-shadow-box')
-            .animate({ opacity: '0' }, 300);
+            .animate({ opacity: '1' }, 300);
     }
 );
 

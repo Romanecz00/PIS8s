@@ -34,12 +34,13 @@ a:hover { text-decoration: underline; }
 }
 
 .one-post {
-    background: #5c0cc5;
+    background: rgba(93,13,208,0.8);
     border-radius: 4px;
     padding: 16px 20px;
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+	opacity: 100%;
 }
 .post-manage { display: flex; justify-content: space-between; align-items: baseline; }
 .post-title { margin: 0 0 8px; }
@@ -63,7 +64,7 @@ a:hover { text-decoration: underline; }
     height: 100%; width: 100%;
     background-color: black;
     z-index: -1;
-    opacity: 0;
+    opacity: '1';
 	border-radius: 4px;
     padding: 16px 20px;
     margin-bottom: 20px;
