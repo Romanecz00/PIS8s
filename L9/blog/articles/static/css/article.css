@@ -2,10 +2,10 @@
 body {
     background-color: #5c0cc5;
     font-family: Tahoma, Arial, sans-serif;
-    color: #83f;
+    color: #fff;
     margin: 0; padding: 0;
 }
-a { color: #83f; text-decoration: none; }
+a { color: #fff; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .parallax {
@@ -34,7 +34,7 @@ a:hover { text-decoration: underline; }
 }
 
 .one-post {
-    background: rgba(255,255,255,0.12);
+    background: #5c0cc5;
     border-radius: 4px;
     padding: 16px 20px;
     margin-bottom: 20px;
@@ -43,7 +43,7 @@ a:hover { text-decoration: underline; }
 }
 .post-manage { display: flex; justify-content: space-between; align-items: baseline; }
 .post-title { margin: 0 0 8px; }
-.post-title a { color: #83f; }
+.post-title a { color: #fff; }
 .article-info { overflow: hidden; margin-bottom: 8px; font-size: 13px; opacity: .8; }
 .article-author { width: 50%; float: left; }
 .article-created-date { text-align: right; }
@@ -58,12 +58,17 @@ a:hover { text-decoration: underline; }
 .one-post.folded .article-info,
 .one-post.folded .article-text { display: none; }
 
-.one-post-shadow {
+.one-post-shadow-box {
     position: absolute; top: 0; left: 0;
     height: 100%; width: 100%;
     background-color: black;
     z-index: -1;
     opacity: 0;
+	border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .article .content {
@@ -88,7 +93,7 @@ a:hover { text-decoration: underline; }
 }
 .content form textarea { min-height: 200px; resize: vertical; }
 .content form input[type=submit] {
-    background: #16a085; color: #83f; border: none;
+    background: #16a085; color: #fff; border: none;
     padding: 10px 30px; font-size: 15px; border-radius: 3px; cursor: pointer;
 }
 .content form input[type=submit]:hover { background: #1abc9c; }

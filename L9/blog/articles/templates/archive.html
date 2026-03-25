@@ -20,19 +20,20 @@
 	        <p><a href="/article/new/">+ Написать статью</a></p>
 	        {% endif %}
 	        {% for post in posts %}
-	        <div class="one-post">
-		        <div class="post-manage">
-		            <h2 class="post-title">
-		                <a href="/article/{{ post.id }}/">{{ post.title }}</a>
-		            </h2>
-		            <a class="fold-btn">Свернуть</a>
-	            </div>
-	            <div class="article-info">
-	                <div class="article-author">{{ post.author.username }}</div>
-	                <div class="article-created-date">{{ post.created_date }}</div>
-	            </div>
-	            <p class="article-text">{{ post.get_excerpt }}</p>
-	            <div class="one-post-shadow"></div>
+	        <div class="one-post-shadow">
+		        <div class="one-post">
+			        <div class="post-manage">
+			            <h2 class="post-title">
+			                <a href="/article/{{ post.id }}/">{{ post.title }}</a>
+			            </h2>
+			            <a class="fold-btn">Свернуть</a>
+		            </div>
+		            <div class="article-info">
+		                <div class="article-author">{{ post.author.username }}</div>
+		                <div class="article-created-date">{{ post.created_date }}</div>
+		            </div>
+		            <p class="article-text">{{ post.get_excerpt }}</p>
+		        </div>
 	        </div>
 	        {% endfor %}
 	        <script src="{{ STATIC_URL }}js/script.js"></script>
