@@ -1,10 +1,14 @@
 // подсветка поста при наведении
-$(".post").hover(
-    function() {
-        $(this).css("background", "#e0f0ff");
+$('.one-post').hover(
+    function(event) {
+        $(event.currentTarget)
+            .find('.one-post-shadow')
+            .animate({ opacity: '10' }, 300);
     },
-    function() {
-        $(this).css("background", "white");
+    function(event) {
+        $(event.currentTarget)
+            .find('.one-post-shadow')
+            .animate({ opacity: '0' }, 300);
     }
 );
 
