@@ -9,7 +9,7 @@ a { color: #fff; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .parallax {
-    background-image: url("https://img.freepik.com/premium-vector/seamless-random-hand-drawn-scribble-pattern-tileable-grungy-texture-endless-wallpapers-vector-illustration_92242-1300.jpg");
+    background-image: url("https://cdn.architextures.org/textures/26/3/rammed-earth---red-clay-armourcoat-9tvltk.jpg");
     height: 200%;
     background-attachment: fixed;
     background-position: center;
@@ -50,11 +50,11 @@ a:hover { text-decoration: underline; }
 .article-created-date { text-align: right; }
 .article-text { clear: both; margin: 0; line-height: 1.6; }
 
-.fold-button {
+.fold-btn {
     cursor: pointer; font-size: 12px; opacity: .7;
     margin: 0; user-select: none;
 }
-.fold-button:hover { opacity: 1; }
+.fold-btn:hover { opacity: 1; }
 
 .one-post.folded .article-info,
 .one-post.folded .article-text { display: none; }
@@ -62,11 +62,9 @@ a:hover { text-decoration: underline; }
 .one-post-shadow-box {
     position: absolute; top: 0; left: 0;
     height: 100%; width: 100%;
-    background-color: black;
-    z-index: -1;
-    opacity: '1';
+    background-color: rgba(47,7,104,0.8);
+    opacity: 70%;
 	border-radius: 4px;
-    padding: 16px 20px;
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;

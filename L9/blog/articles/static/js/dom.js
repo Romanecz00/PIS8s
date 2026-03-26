@@ -34,7 +34,7 @@ var foldBtns = document.getElementsByClassName("fold-btn");
 
 for (var i = 0; i < foldBtns.length; i++) {
     foldBtns[i].addEventListener('click', function(e) {
-        var onePost = e.target.parentElement.parentElement;
+        var onePost = e.target.parentElement.parentElement.parentElement;
 
         if (onePost.className.indexOf('folded') !== -1) {
             onePost.className = 'one-post';
